@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -119,5 +119,22 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
+}
+
+export async function getServerSideProps({ query }) {
+  console.log(new URLSearchParams(query).toString());
+  const queryString = new URLSearchParams(query).toString();
+  const res = await axios.get(
+    `${process.env.NEXT_PUBLIC_REACT_BE_API}/adverts-room/search?${queryString}`
+  );
+  const { adverts, count, perPage } = res.data;
+  console.log("map adv", count, adverts);
+  return {
+    props: {
+      adverts,
+      count,
+      perPage,
+    },
+  };
 }
