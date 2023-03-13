@@ -1,0 +1,138 @@
+@use "../../styles/_globalVariables.scss" as *;
+.searchNav {
+  position: relative;
+  background-color: white !important;
+  transition: 0.5s;
+  border-radius: $border-radius-standard;
+  z-index: 1;
+  margin: 1rem auto;
+  border-radius: 1.3rem;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  background-color: #fafafa;
+  border-radius: 12px;
+  label {
+    display: block;
+  }
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+.submit {
+  padding: 0.8rem 1.8rem;
+  background-color: #dc4737;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: all 200ms;
+  &:hover {
+    background-color: #c43c2d;
+  }
+}
+
+.buttonLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  padding: 1.5rem 0.6rem 1.5rem 0.6rem;
+  border-bottom: 1px solid #d6dbde;
+  background-color: #ffffff;
+  max-width: 70rem;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 1.3rem;
+  align-items: center;
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+}
+.icon {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  object-fit: contain;
+  margin-right: 0.2rem;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    background-color: $hover-color-light-blue;
+  }
+}
+
+.listItem {
+  padding: 10px 12px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  color: $text-color-bronze;
+  font-size: 1.1rem;
+  &:hover {
+    background-color: $hover-color-light-blue;
+  }
+}
+
+.list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  list-style: none;
+  border: 1px solid #d9e1ec;
+  z-index: 99;
+  padding-left: 0;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.05);
+  margin: 1px 0;
+  border-radius: $border-radius-standard;
+}
+
+.autocompleteContainer {
+  position: relative;
+  width: 45%;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.3rem;
+  height: 2rem;
+  width: 100%;
+  border: none;
+  background-color: #fafafa;
+  color: $text-color-bronze;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.label {
+  font-size: 1rem;
+  margin-right: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.mapContainer {
+  width: 0;
+}

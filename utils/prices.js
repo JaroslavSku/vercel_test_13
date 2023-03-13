@@ -1,0 +1,4 @@
+export const AGREEMENT_PRICE = 195;
+export const VERIFICATION_PRICE_STANDARD = 245;
+export const VERIFICATION_PRICE_DISCOUNT = 145;
+export const ADVERT_PRICE = 0;

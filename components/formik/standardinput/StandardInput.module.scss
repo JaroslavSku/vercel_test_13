@@ -1,0 +1,47 @@
+@use "../../../styles/_globalVariables.scss" as *;
+
+.group {
+  display: block;
+  input {
+    color: $text-color-bronze;
+    padding: 0.3rem;
+    height: 2.5rem;
+    width: 100%;
+    @include standard-input;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100% !important;
+  }
+}
+
+.title {
+  color: $text-color-blue;
+  font-size: 1rem;
+  margin-right: 1.5rem;
+  @media screen and (max-width: 400px) {
+    margin-right: 0rem;
+  }
+}
+
+.label {
+  font-size: 1rem;
+  margin-right: 0.9rem;
+}
+
+.backLabel {
+  position: absolute;
+  color: $border-color-gray;
+  top: 50%;
+  right: 1rem;
+  font-weight: 600;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.inputBody {
+  position: relative;
+  width: 100%;
+}

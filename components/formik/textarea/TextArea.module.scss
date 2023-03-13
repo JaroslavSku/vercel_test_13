@@ -1,0 +1,12 @@
+.textarea {
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Roboto";
+  padding: 0.5rem;
+  &:focus {
+    outline: none;
+    border: 1px solid #b9a952;
+    border-radius: 3px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  }
+}

@@ -1,0 +1,23 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.body {
+  background-color: white;
+  color: #6b6b6b;
+  padding: 1.6rem 1.6rem 4rem 1.6rem;
+  border-radius: $border-radius-standard;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cecece;
+  padding: 0.6rem 0;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+}
