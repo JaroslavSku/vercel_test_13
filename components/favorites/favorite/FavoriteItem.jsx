@@ -9,7 +9,7 @@ import { peopleIconsUrl } from "@/utils/urls";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { addDefaultImage } from "@/utils/addDefaultImage";
-import { Delete } from "@mui/icons-material";
+// import { Delete } from "@mui/icons-material";
 import { useDispatch, useSelector } from "react-redux";
 import { includes } from "lodash";
 import {
@@ -119,7 +119,7 @@ export default function FavoriteItem({ advert, editable, index }) {
             </div>
 
             <div ref={deleteRef} onClick={deleteFromFavorites}>
-              <Delete />
+              {/* <Delete /> */}
             </div>
           </div>
         </div>

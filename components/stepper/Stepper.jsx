@@ -3,7 +3,7 @@ import styles from "./Stepper.module.scss";
 import { map } from "lodash";
 import { css, jsx } from "@emotion/react";
 import { iconsUrl } from "@/utils/urls";
-import { DoneOutline } from "@mui/icons-material";
+// import { DoneOutline } from "@mui/icons-material";
 
 /** @jsxRuntime classic /
 /** @jsx jsx */
@@ -83,7 +83,7 @@ export default function Stepper({ step, data, stepCount }) {
               className={styles.step}
             >
               <strong className={styles.number}>
-                {number < step ? <DoneOutline /> : number}
+                {/* {number < step ? <DoneOutline /> : number} */}
               </strong>
               {description}
             </li>

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Image.module.scss";
 import { useDrag, useDrop } from "react-dnd";
 import { useRef } from "react";
-import { DeleteOutlined } from "@mui/icons-material";
+// import { DeleteOutlined } from "@mui/icons-material";
 const type = "Image";
 const Image = ({ image, index, moveImage, remove }) => {
   console.log(image);
@@ -61,10 +61,10 @@ const Image = ({ image, index, moveImage, remove }) => {
       </div>
 
       <p className={styles.bottomLine}>
-        <DeleteOutlined
+        {/* <DeleteOutlined
           className={styles.deleteIcon}
           onClick={() => remove(index, image._id)}
-        />
+        /> */}
       </p>
     </div>
   );

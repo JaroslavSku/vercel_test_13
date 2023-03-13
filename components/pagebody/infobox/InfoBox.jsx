@@ -1,13 +1,11 @@
 import Link from "next/link";
 import styles from "./InfoxBox.module.scss";
-import { HelpOutlineTwoTone } from "@mui/icons-material";
+// import { HelpOutlineTwoTone } from "@mui/icons-material";
 
 export default function InfoBox() {
   return (
     <div className={styles.container}>
-      <div className={styles.iconBox}>
-        <HelpOutlineTwoTone />
-      </div>
+      <div className={styles.iconBox}>{/* <HelpOutlineTwoTone /> */}</div>
       <div className={styles.textBox}>
         <h4 className={styles.title}>
           Víte, že je spolubydlení i vhodná možnost jak si přividělat?{" "}

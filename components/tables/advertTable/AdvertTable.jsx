@@ -4,45 +4,45 @@ import React, { useEffect } from "react";
 import sanitizeHtml from "sanitize-html";
 import $c from "../../../utils/currencyFormatter";
 import { energeticClass } from "@/utils/energeticClass";
-import {
-  AccountBalanceWallet,
-  Bed,
-  Bolt,
-  Crop,
-  Dashboard,
-  Money,
-  Payment,
-  Stairs,
-} from "@mui/icons-material";
+// import {
+//   AccountBalanceWallet,
+//   Bed,
+//   Bolt,
+//   Crop,
+//   Dashboard,
+//   Money,
+//   Payment,
+//   Stairs,
+// } from "@mui/icons-material";
 
 export default function AdvertTable({ advert, parametersTable }) {
   useEffect(() => {
     console.log(advert, parametersTable);
   }, [advert, parametersTable]);
 
-  function switchIcon(value) {
-    switch (value.title) {
-      case "Dispozice":
-        return <Dashboard />;
-      case "Patro":
-        return <Stairs />;
-      case "Vybavenost":
-        return <Bed />;
-      case "Energetická třída":
-        return <Bolt />;
-      case "Výměra":
-        return <Crop />;
-      case "Cena":
-        return <Payment />;
-      case "Poplatky":
-        return <Money />;
-      case "Kauce":
-        return <AccountBalanceWallet />;
+  // function switchIcon(value) {
+  //   switch (value.title) {
+  //     case "Dispozice":
+  //       return <Dashboard />;
+  //     case "Patro":
+  //       return <Stairs />;
+  //     case "Vybavenost":
+  //       return <Bed />;
+  //     case "Energetická třída":
+  //       return <Bolt />;
+  //     case "Výměra":
+  //       return <Crop />;
+  //     case "Cena":
+  //       return <Payment />;
+  //     case "Poplatky":
+  //       return <Money />;
+  //     case "Kauce":
+  //       return <AccountBalanceWallet />;
 
-      default:
-        break;
-    }
-  }
+  //     default:
+  //       break;
+  //   }
+  // }
 
   return (
     <div className={styles.tableContainer}>
@@ -70,7 +70,7 @@ export default function AdvertTable({ advert, parametersTable }) {
             return (
               <tr>
                 <th className={styles.heading}>
-                  {switchIcon(value)}
+                  {/* {switchIcon(value)} */}
                   {value?.title}
                 </th>
                 <td
