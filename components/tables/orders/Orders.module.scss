@@ -1,0 +1,28 @@
+@use "../../../styles/_globalVariables.scss" as *;
+
+.container {
+  overflow-x: scroll;
+  td {
+    white-space: nowrap;
+  }
+}
+
+.table {
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: $border-radius-standard;
+  text-align: center;
+}
+
+.tableHeader {
+  color: $text-color-blue;
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-weight: normal;
+  white-space: nowrap;
+  th {
+    padding: 0.9rem 0.5rem;
+  }
+}

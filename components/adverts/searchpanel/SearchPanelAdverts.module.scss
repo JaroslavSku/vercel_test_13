@@ -1,0 +1,10 @@
+@use "../../../styles/_globalVariables.scss" as *;
+
+.container {
+  // background-color: $background-color-gray;
+  margin: 1rem;
+}
+
+.container > div {
+  margin: 2rem 0;
+}

@@ -1,0 +1,30 @@
+@use "../../../../styles/_globalVariables.scss" as *;
+.container {
+  margin-right: 2rem;
+  cursor: pointer;
+  &:hover .secondLine {
+    background-color: rgb(138, 127, 127);
+  }
+  &:hover .firstLine {
+    background-color: rgb(138, 127, 127);
+  }
+}
+
+.firstLine {
+  height: 15px;
+  width: 2px;
+  margin-left: 12px;
+  background-color: black;
+  transform: rotate(45deg);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.secondLine {
+  height: 15px;
+  width: 2px;
+  background-color: black;
+  transform: rotate(90deg);
+  z-index: 2;
+  cursor: pointer;
+}

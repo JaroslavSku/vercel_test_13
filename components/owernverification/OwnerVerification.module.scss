@@ -1,0 +1,43 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.body {
+  border-bottom: 1px solid $border-color-gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  color: $button-color-blue;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.button {
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  background-color: white;
+  margin-right: 1rem;
+  @include cancel-button;
+  &:hover {
+    background-color: $background-color-gray;
+  }
+}
+
+.checkmark {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.ownership {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+.info {
+  font-size: 0.8rem;
+}

@@ -1,0 +1,36 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.showModal {
+  display: absolute;
+}
+
+.hideModal {
+  display: none;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  opacity: 99%;
+  z-index: 100;
+  cursor: default;
+}
+
+.main {
+  position: fixed;
+  background: white;
+  max-width: 770px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  border-radius: $border-radius-standard;
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+    height: auto;
+  }
+}

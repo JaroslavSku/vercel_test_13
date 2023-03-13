@@ -1,0 +1,41 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.containerShow {
+  height: 100%;
+  opacity: 1;
+  //   transform: scale(1, 1);
+  transform-origin: top center;
+}
+
+.containerHide {
+  height: 0;
+  opacity: 0;
+  //   transform: scale(0.5, 0);
+  transform-origin: top left;
+}
+.containerShow,
+.containerHide {
+  transition: all 350ms ease-out;
+  -o-transition: all 350ms ease-out;
+  -moz-transition: all 350ms ease-out;
+  -webkit-transition: all 350ms ease-out;
+  overflow: hidden;
+
+  label {
+    display: block;
+  }
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  label {
+    display: block;
+  }
+}
+
+.bottomLine > div {
+  margin-bottom: 2rem;
+}

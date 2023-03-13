@@ -1,0 +1,16 @@
+.redCircle {
+  height: 5.5rem;
+  width: 5.5rem;
+  background-color: rgb(155, 52, 52);
+  color: white;
+  font-size: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 10%;
+  right: 30%;
+  opacity: 90%;
+}

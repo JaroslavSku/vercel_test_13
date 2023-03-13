@@ -1,0 +1,76 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.body {
+  max-width: 20rem;
+  margin: 0 4rem 0 2rem;
+  white-space: nowrap;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.profileImage {
+  height: 100%;
+  width: 100%;
+  background-color: $background-color-gray;
+  border-radius: 50%;
+}
+
+.profileBody {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.profileImageContainer {
+  position: relative;
+  height: 6rem;
+  width: 6rem;
+  margin-right: 1.5rem;
+}
+
+.personType {
+  color: #2c2c2c8b;
+}
+
+.profileBtn {
+  color: $text-color-blue;
+  background-color: #e2efff;
+  padding: 0.4rem 1.2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.pencilImage {
+  height: 16px;
+  width: 16px;
+  margin-right: 1rem;
+}
+
+.personName {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.camera {
+  opacity: 60%;
+}
+
+.cameraBody {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  padding: 0.4rem;
+  background-color: $background-light-blue;
+  border-radius: 50%;
+  border: 1px solid #cecece;
+}

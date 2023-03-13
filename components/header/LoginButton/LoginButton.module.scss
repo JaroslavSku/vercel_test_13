@@ -1,0 +1,79 @@
+@use "../../../styles/_globalVariables.scss" as *;
+
+.loginButton {
+  border: solid 1px $button-color-red2;
+  padding: 10px;
+  font-size: 1rem;
+  color: $button-color-red2;
+  margin-left: 1.3rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  position: relative;
+  white-space: nowrap;
+  transition: all 300ms;
+  cursor: pointer;
+  &:hover {
+    color: $hover-color-red;
+    background-color: rgb(235, 191, 191);
+  }
+}
+
+.body {
+  margin: 0 1rem;
+  position: relative;
+  @media screen and (max-width: 800px) {
+    padding: 0.5rem 0;
+  }
+}
+
+.loggedInUserBody {
+  display: flex;
+  position: relative;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+.userName {
+  margin: 0 1rem;
+  white-space: nowrap;
+  position: relative;
+  background-color: white;
+}
+
+.userImage {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background-color: $background-color-gray;
+}
+
+.arrowDown {
+  transform: rotate(90deg);
+  width: 0.6rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.arrowUp {
+  transform: rotate(270deg);
+  width: 0.6rem;
+  height: 1rem;
+}
+
+.horizontalLine {
+  height: 2.5rem;
+  margin: 0 1rem;
+  border-right: 2px solid $background-color-gray;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}

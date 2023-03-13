@@ -1,0 +1,26 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.container {
+  display: block;
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+  top: 100%;
+  background-color: white;
+  z-index: 101;
+  @media screen and (max-width: 800px) {
+    top: 80%;
+  }
+}
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  list-style: none;
+  padding: 0.7rem 1.5rem;
+  color: $button-color-blue;
+  &:hover {
+    color: $text-color-gray;
+  }
+}

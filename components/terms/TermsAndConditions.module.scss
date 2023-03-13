@@ -1,0 +1,33 @@
+@use "../../styles/_globalVariables.scss" as *;
+.container {
+  margin-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  margin: 0 0.8rem 0.1rem 0 !important;
+  width: 1rem !important;
+  height: 1rem;
+  padding: 0rem !important;
+  -webkit-appearance: none;
+  position: relative;
+  flex: none;
+  &:checked::before {
+    content: "✔";
+    font-size: 1.3rem;
+    position: absolute;
+    top: -10px;
+  }
+}
+
+.link {
+  white-space: nowrap;
+  &:hover {
+    color: grey;
+  }
+}
+
+.label {
+  margin-top: auto !important;
+}

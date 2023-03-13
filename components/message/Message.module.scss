@@ -1,0 +1,36 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.container {
+  position: relative;
+  margin: auto;
+  background-color: white;
+  width: 40rem;
+  height: 20rem;
+  margin-top: 4rem;
+  border-radius: $border-radius-standard;
+}
+
+.checkMark {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.messageBox {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  margin: 8rem auto auto auto;
+  font-size: 2rem;
+  color: $text-color-blue;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}

@@ -1,0 +1,101 @@
+@use "../../styles/_globalVariables.scss" as *;
+.number {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  background-color: transparent;
+  border: 1px solid #888;
+  color: #777;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto 10px;
+  position: relative;
+  svg {
+    font-size: 1rem;
+  }
+}
+.step {
+  float: left;
+  display: inline;
+  width: 33.33%;
+  padding-top: 1px;
+  overflow: hidden;
+}
+
+.stepperList {
+  list-style: none;
+  border: none;
+  padding: 0;
+  text-align: center;
+  & > li:first-child strong:after {
+    content: "";
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    width: 500px;
+    left: 100%;
+    margin-left: 20px;
+  }
+  & > li:first-child + li strong {
+    &:before {
+      content: "";
+      height: 1px;
+      background: #ccc;
+      position: absolute;
+      top: 50%;
+      width: 500px;
+      right: 100%;
+      margin-right: 20px;
+    }
+    &:after {
+      left: 100%;
+      margin-left: 20px;
+      content: "";
+      height: 1px;
+      background: #ccc;
+      position: absolute;
+      top: 50%;
+      width: 500px;
+    }
+  }
+  & > li:first-child + li + li strong {
+    &:before {
+      content: "";
+      height: 1px;
+      background: #ccc;
+      position: absolute;
+      top: 50%;
+      width: 500px;
+      right: 100%;
+      margin-right: 20px;
+    }
+  }
+}
+// .stepperList > li:first-child + li strong:before {
+//   content: "";
+//   height: 1px;
+//   background: #ccc;
+//   position: absolute;
+//   top: 50%;
+//   width: 500px;
+//   right: 100%;
+//   margin-right: 20px;
+// }
+.container {
+  h4 {
+    font-size: 1rem;
+    color: $text-color-gray;
+  }
+}
+
+.section {
+  border-top: 1px solid #f0f0f0;
+  padding: 9px 50px 19px 150px;
+  position: relative;
+}
+
+.list {
+}

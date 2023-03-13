@@ -1,0 +1,16 @@
+.error {
+  text-align: left;
+  color: red;
+  font-size: 5rem;
+}
+
+.marker {
+  background-image: url("/icons/general/circle_marker.png");
+  text-align: center;
+  padding-top: 0.7rem;
+  font-weight: bold;
+  color: #fff;
+  background-size: contain;
+  width: 38px !important;
+  height: 38px !important;
+}

@@ -1,0 +1,24 @@
+@use "../../../styles/_globalVariables.scss" as *;
+
+.body {
+  display: flex;
+  margin: 1rem;
+  @media screen and (max-width: 800px) {
+    min-width: 20rem;
+  }
+  @media screen and (max-width: 500px) {
+    min-width: 100%;
+    margin: 0;
+  }
+}
+
+.main {
+  display: block;
+  width: 100%;
+  margin-right: 2rem;
+  margin-bottom: 10rem;
+  max-width: 1100px;
+  @media screen and (max-width: 800px) {
+    margin-right: 0rem;
+  }
+}

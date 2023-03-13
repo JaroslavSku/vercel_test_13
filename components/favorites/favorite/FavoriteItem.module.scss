@@ -1,0 +1,92 @@
+.imageContainer {
+  width: 280px;
+  height: 220px;
+  position: relative;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  margin-bottom: 2rem;
+  color: #37474f;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 20px 20px 60px #746a6a29;
+  }
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+.addressLine {
+  display: flex;
+  color: #37474f;
+  margin-bottom: 1.8rem;
+}
+
+.middleLine {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-size: 1.03rem;
+}
+
+.lastLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 1.03rem;
+}
+
+.body {
+  padding: 1rem;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.onlineTime {
+  color: #218700;
+}
+.userImage {
+  height: 100%;
+  width: 100%;
+}
+
+.userImageContainer {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 1.5rem;
+  img {
+    height: 100%;
+    position: relative !important;
+    border-radius: 50%;
+  }
+}
+
+.imageWidget {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.marker {
+  background-image: url("/icons/general/marker.png");
+  text-align: center;
+  padding-top: 0.7rem;
+  font-weight: bold;
+  color: #fff;
+  background-size: contain;
+  width: 60px !important;
+  height: 60px !important;
+  margin-top: -30px !important;
+  z-index: 6;
+  position: absolute;
+}

@@ -1,0 +1,6 @@
+@use "../../styles/_globalVariables.scss" as *;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

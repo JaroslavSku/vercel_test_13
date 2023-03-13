@@ -1,0 +1,35 @@
+@use "../../../../styles/_globalVariables.scss" as *;
+
+.paid {
+  color: #87bc23;
+}
+
+.unpaid {
+  color: #e33e44;
+}
+
+.line {
+  border-top: 1px solid $border-color-gray;
+  width: 100%;
+  td {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+.paymentBtn {
+  padding: 0.7rem 0.8rem;
+  background-color: white;
+  color: $button-color-blue;
+  font-weight: bold;
+  border: 1px solid $button-color-blue;
+  border-radius: $border-radius-standard;
+}
+
+.pdf {
+  text-align: center;
+}
+
+.pdfImage {
+  width: 1.5rem;
+  height: 1.5rem;
+}

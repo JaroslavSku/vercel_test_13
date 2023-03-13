@@ -1,0 +1,51 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.body {
+  overflow-y: auto;
+}
+
+.submitBtn {
+  @include blue-button;
+  padding: 0.6rem 2.5rem;
+  margin-right: 1rem;
+}
+
+.cancelBtn {
+  @include cancel-button;
+  padding: 0.6rem 2.5rem;
+  background-color: white;
+  &:hover {
+    background-color: whitesmoke;
+  }
+}
+
+.cropper {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  padding-bottom: 1rem;
+}
+
+.cross {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+
+.range {
+  margin-top: 1rem;
+}

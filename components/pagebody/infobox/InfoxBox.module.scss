@@ -1,0 +1,47 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.iconBox {
+  background-color: $text-color-bronze;
+  color: white;
+  font-size: 2.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 12rem;
+  position: relative;
+  border: 2px $text-color-bronze solid;
+  margin: 0 0 1rem 3rem;
+  @media screen and (max-width: 900px) {
+    margin: 0 0 1rem 0;
+  }
+}
+
+.textBox {
+  padding: 1rem 2rem 2rem 2rem;
+  @media screen and (max-width: 600px) {
+    padding: 1rem 2rem 5rem 2rem;
+  }
+}
+
+.buttonSave {
+  background-color: $text-color-bronze;
+  padding: 0.8rem 1rem;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  transition: all 200ms;
+  &:hover {
+    background-color: $hover-color-bronze;
+  }
+}

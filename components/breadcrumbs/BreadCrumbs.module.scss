@@ -1,0 +1,48 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.content {
+  padding: 1rem;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  a {
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  li {
+    &:not(:last-child) {
+      color: $button-color-red;
+    }
+    &:not(:first-child) {
+      &::before {
+        content: "〜";
+        margin: 0 0.5rem;
+        @media screen and (max-width: 900px) {
+          margin: 0.1rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 0.8rem;
+    a {
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.list {
+  @media screen and (max-width: 900px) {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0;
+    list-style-type: none;
+  }
+}

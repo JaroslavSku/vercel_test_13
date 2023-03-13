@@ -1,0 +1,17 @@
+@use "../../../../styles/_globalVariables.scss" as *;
+
+.container {
+  margin: 0.9rem 0 1.1rem 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.inputText {
+  width: 100%;
+  padding: 0.2rem;
+  font-size: 1rem;
+  @include standard-input;
+}

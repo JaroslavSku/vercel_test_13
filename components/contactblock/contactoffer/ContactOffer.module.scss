@@ -1,0 +1,38 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.adNumberBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.infoBody {
+  padding: 1rem;
+}
+
+.contactBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $border-radius-standard;
+  color: white;
+  cursor: pointer;
+  background-color: #c23427;
+  outline: none;
+  border: 1px solid #e1eaf2;
+  padding: 0.5rem 7rem;
+  transition: background-color ease-in 0.125s;
+  width: 100%;
+  border-radius: 0.75rem;
+  &:hover {
+    background-color: #9c251a;
+  }
+  svg {
+    margin-right: 0.5rem;
+  }
+}

@@ -1,0 +1,18 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.image {
+  height: 30%;
+  width: 30%;
+}
+.verificationContainer {
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: $text-color-gray;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}

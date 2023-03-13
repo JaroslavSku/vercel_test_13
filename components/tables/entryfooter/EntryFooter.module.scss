@@ -1,0 +1,26 @@
+@use "../../../styles/_globalVariables.scss" as *;
+
+.displayMore {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-size: 0.9rem;
+  color: $text-color-blue;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+
+.arrowDown {
+  border: solid $text-color-blue;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  padding: 0.2rem;
+  margin: 0rem 0.5rem 0.2rem 0.5rem;
+}

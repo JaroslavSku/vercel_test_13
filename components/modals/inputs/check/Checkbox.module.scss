@@ -1,0 +1,25 @@
+@use "../../../../styles/_globalVariables.scss" as *;
+.container {
+  margin-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  margin: 0 0.8rem 0.15rem 0;
+  width: 1rem;
+  height: 1rem;
+  -webkit-appearance: none;
+  position: relative;
+  flex: none;
+  &:checked::before {
+    content: "✔";
+    font-size: 1.3rem;
+    position: absolute;
+    top: -10px;
+  }
+}
+
+.label {
+  white-space: nowrap;
+}

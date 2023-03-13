@@ -1,12 +1,23 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-
 import axios from "axios";
 import Cover from "@/components/cover/Cover";
+import { useRouter } from "next/router";
+import Pagination from "@/components/pagination/Pagination";
+import PageBody from "@/components/pagebody/PageBody";
+import Footer from "@/components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ count }) {
+export default function Home({ adverts, query, perPage, count }) {
+  const router = useRouter();
+
+  function setCurrentPage(page) {
+    console.log("handling current page", page);
+    router.push({
+      query: { page: page },
+    });
+  }
   return (
     <>
       <Head>
@@ -17,6 +28,17 @@ export default function Home({ count }) {
       </Head>
       <main>
         <Cover />
+        <PageBody adverts={adverts} />
+        {count > 0 && (
+          <Pagination
+            // className={styles.paginationBar}
+            currentPage={parseInt(router?.query?.page)}
+            totalCount={count}
+            pageSize={perPage}
+            onPageChange={(page) => setCurrentPage(page)}
+          />
+        )}
+        <Footer />
       </main>
     </>
   );

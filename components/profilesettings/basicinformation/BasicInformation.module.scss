@@ -1,0 +1,80 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.body {
+  background-color: white;
+  padding: 2rem;
+  border-bottom: 1px solid #cecece;
+  min-width: 30rem;
+  input {
+    height: 2rem;
+    margin-right: 1rem;
+    border: 1px solid #d1d1d1;
+    border-radius: $border-radius-standard;
+    padding-left: 0.5rem;
+    &:focus {
+      outline: none;
+      border: 1px solid $border-color-brown;
+      border-radius: $border-radius-standard;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+.namesLine {
+  display: flex;
+}
+
+.submitBtn {
+  @include blue-button;
+  padding: 0.6rem 2.5rem;
+  margin-right: 1rem;
+}
+
+.cancelBtn {
+  @include cancel-button;
+  padding: 0.6rem 2.5rem;
+  background-color: white;
+  &:hover {
+    background-color: whitesmoke;
+  }
+}
+.buttons {
+  min-width: 20rem;
+  margin-top: 1rem;
+}
+
+.addInfo {
+  width: 18.8rem;
+  margin-top: 1rem;
+  input {
+    height: 2rem;
+    display: flex;
+    width: 100%;
+    margin: 1rem 1rem 0rem 0;
+  }
+}
+
+.email {
+  background-color: #d8d8d8;
+}
+
+.titleBefore {
+  width: 5rem;
+}
+
+.name {
+  min-width: 5rem;
+  width: 40%;
+}
+
+.surname {
+  min-width: 5rem;
+  width: 40%;
+}
+
+.titleAfter {
+  width: 5rem;
+}
+
+.errorText {
+  font-size: 0.8rem;
+  color: red;
+}

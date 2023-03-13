@@ -1,0 +1,14 @@
+@use "../../styles/_globalVariables.scss" as *;
+.confirmMessage {
+  background: #92c24f;
+  border-radius: $border-radius-standard;
+  color: white;
+  padding: 1rem;
+}
+
+.errorMessage {
+  background: #f7dddc;
+  border-radius: $border-radius-standard;
+  color: black;
+  padding: 1rem;
+}

@@ -1,10 +1,15 @@
 import { useFormik } from "formik";
 import React, { useEffect, useState } from "react";
+import { layoutData } from "../../utils/layOut";
 import CustomInput from "../supplementaldata/custominput/CustomInput";
 import styles from "./SearchMenu.module.scss";
+import Collapsible from "../collapsible/Collapsible";
+// import { Tune } from "@material-ui/icons";
 import StandardInput from "../formik/standardinput/StandardInput";
+import Autocomplete2 from "../autocomplete2/Autocomplete2";
 import { useRouter } from "next/router";
 import { gender } from "@/utils/genderMap";
+import { cities } from "@/utils/cities";
 import { forEach } from "lodash";
 import AutocompleteCities from "../autocompletecities/AutoCompleteCities";
 

@@ -1,0 +1,39 @@
+.descriptionTitle {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.priceTitle {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.slider {
+  margin-bottom: 1rem;
+  height: 100%;
+}
+
+.description {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  margin: auto auto 1rem auto;
+  width: 500px;
+}
+
+.price {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  margin: auto auto 1rem auto;
+  width: 500px;
+}
+
+.container {
+  height: 25rem;
+  width: 100%;
+}

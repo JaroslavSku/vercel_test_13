@@ -1,0 +1,71 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.container {
+  position: relative;
+  height: 12rem;
+  margin-bottom: 1rem;
+  border: 2px $text-color-bronze solid;
+  padding: 2rem;
+  button {
+    margin-bottom: 1rem;
+
+    padding: 0.8rem 2.5rem;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    margin: 0 0.5rem 3rem 0;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonDelete {
+  background-color: $text-color-bronze;
+  transition: all 200ms;
+  &:hover {
+    background-color: $hover-color-bronze;
+  }
+}
+
+.buttonSave {
+  background-color: $text-color-bronze;
+  transition: all 200ms;
+  &:hover {
+    background-color: $hover-color-bronze;
+  }
+}
+
+.title {
+  margin-top: 0;
+}
+
+.favorites {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    color: $hover-color-bronze;
+    text-decoration: underline;
+  }
+}
+
+.bubble {
+  border-radius: 50%;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding-top: 0.3rem;
+  padding-right: 0.1rem;
+  background: $text-color-bronze;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.favoritesTitle {
+  margin-right: 0.5rem;
+}

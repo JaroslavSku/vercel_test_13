@@ -1,0 +1,30 @@
+@use "../../../styles/_globalVariables.scss" as *;
+
+.modalBody {
+  text-align: center;
+}
+
+.title {
+  color: $button-color-blue;
+  padding: 1rem 0;
+  margin: 0;
+  border-bottom: 1px solid $border-color-gray;
+}
+
+.item {
+  background-color: white;
+  color: $text-color-blue;
+  padding: 0.5rem 9rem;
+  font-size: 1rem;
+  border-bottom: 1px solid $border-color-gray;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover-color-light-blue;
+  }
+}
+
+.cancel {
+  color: $text-color-gray;
+  padding: 1rem 9rem;
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.logout {
+  color: $text-color-gray;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.8rem 8rem 0.8rem 1.5rem;
+  background-color: white;
+  border: 1px solid #efefef;
+  opacity: 60%;
+  list-style: none;
+}
+
+.logoutImg {
+  vertical-align: text-bottom;
+  width: 21px;
+  height: 21px;
+  margin-right: 0.9rem;
+  opacity: 60%;
+}

@@ -1,0 +1,35 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.imageContainer {
+  width: 5rem;
+  height: 5rem;
+  padding: 0.5rem;
+  margin: 0 1rem 1rem 0;
+
+  overflow: hidden;
+  img {
+    height: 100%;
+    position: relative !important;
+    border-radius: 50%;
+  }
+}
+
+.name {
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.userTime {
+  color: $text-color-minutes;
+}
+
+.container {
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px $background-color-gray solid;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,39 @@
+@use "../../../../styles/_globalVariables.scss" as *;
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px auto;
+  background-color: white;
+  max-width: 100%;
+  flex-basis: 100%;
+  border-radius: 5px;
+  padding: 0.6rem 2rem 0.3rem 1rem;
+}
+
+.date {
+  font-size: 1rem;
+  color: $text-color-gray;
+  flex: 1 1 20%;
+  white-space: nowrap;
+}
+
+.name {
+  @include name;
+  flex: 1 1 20%;
+  white-space: nowrap;
+  @media screen and (max-width: 800px) {
+    margin: 0 0 0.5rem 0.5rem;
+  }
+}
+
+.editBtn {
+  @include editBtn;
+}
+
+.info {
+  color: $text-color-green;
+  flex: 1 1 0%;
+  white-space: nowrap;
+  color: $background-color-yellow;
+}

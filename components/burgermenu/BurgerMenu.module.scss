@@ -1,0 +1,94 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.header {
+  padding: 0 0 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 3px solid #e2e2e2;
+  position: relative;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+.navBar {
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+.list {
+  display: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 5rem 1rem 1rem 1rem;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: $text-color-bronze;
+  white-space: nowrap;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.listItem {
+  display: none;
+  color: $text-color-bronze;
+  text-decoration: none;
+  padding: 0.5rem 0 0 1.3rem;
+  font-size: 1rem;
+  @media screen and (max-width: 800px) {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    display: block;
+  }
+  &:hover {
+    color: #e2e2e2;
+  }
+}
+
+.burger {
+  top: 0.8rem;
+  display: none;
+  background-color: white;
+  padding: 0.6rem 0rem 0rem 1.7rem;
+  z-index: 200;
+  position: absolute;
+  width: 8rem;
+  cursor: pointer;
+  div {
+    width: 35px;
+    height: 2px;
+    background-color: $text-color-bronze;
+    margin: 6px 0;
+    color: $text-color-bronze;
+  }
+  @media screen and (max-width: 800px) {
+    display: inline-block;
+  }
+}
+
+.overlay {
+  @include overlay;
+  display: none;
+  @media screen and (min-width: 800px) {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}

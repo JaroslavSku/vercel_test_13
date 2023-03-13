@@ -1,0 +1,67 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.tenantImage {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 1.5rem;
+  @media screen and (max-width: 800px) {
+    margin: auto;
+    height: 100%;
+  }
+}
+
+.userBtnLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  margin-right: 1rem;
+  border-radius: $border-radius-standard;
+}
+
+.title {
+  margin-right: 4rem;
+  @media screen and (max-width: 800px) {
+    margin: 1rem;
+  }
+}
+
+.radioBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radioBtnContainer input[type="radio"] {
+  display: none;
+  width: 1.6rem;
+  height: 1.2rem;
+  &:checked + span img {
+    opacity: 1;
+  }
+  &:checked .radioBtnContainer {
+    border: 1px solid $button-color-brown;
+  }
+}
+
+.checkedImage {
+  height: 1.3rem;
+  width: 1.3rem;
+  opacity: 0;
+}
+
+.square {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid $button-color-brown;
+}
+
+.title {
+  font-size: 1.1rem;
+  color: $text-color-blue;
+}

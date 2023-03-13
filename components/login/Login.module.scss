@@ -1,0 +1,63 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.container {
+  width: 45%;
+  background-color: white;
+  padding: 3rem;
+  height: 35rem;
+  max-width: 36rem;
+  @media screen and (max-width: 800px) {
+    width: auto;
+    margin: 0.5rem;
+  }
+}
+.form {
+  display: grid;
+}
+
+.button {
+  margin-bottom: 1rem;
+  background-color: $button-color-blue;
+  padding: 1rem 3rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.label {
+  font-size: 1rem;
+  color: black;
+  margin-top: 1.2rem;
+}
+
+.permanentLogin {
+  margin-top: 3rem;
+}
+
+.inputText {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+}
+
+.eyeImage {
+  vertical-align: middle;
+  display: inline;
+  margin-left: -2rem;
+  height: 1rem;
+  opacity: 60%;
+}
+
+.passwordInpt {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+}
+
+.forgotPasswordText {
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  color: $button-color-blue;
+  text-decoration: underline;
+  text-align: right;
+  cursor: pointer;
+}

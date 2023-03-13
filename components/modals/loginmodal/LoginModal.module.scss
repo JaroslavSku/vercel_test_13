@@ -1,0 +1,35 @@
+@use "../../../styles/_globalVariables.scss" as *;
+
+.button {
+  margin: 0.5rem 1rem 0 0;
+  background-color: $button-color-blue;
+  padding: 1rem 3rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  @include blue-button;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 3rem;
+}
+
+.heading {
+  font-size: 1.2rem;
+  color: $text-color-blue;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cross {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}

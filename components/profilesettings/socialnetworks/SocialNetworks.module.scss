@@ -1,0 +1,39 @@
+.socialNetworksBody {
+  display: flex;
+  height: 3rem;
+  min-width: 30rem;
+}
+
+.socialNetworks {
+  background-color: white;
+  padding: 2rem;
+  min-width: 30rem;
+  input {
+    width: 9.5rem;
+    height: 4rem;
+    padding: 0.5rem;
+  }
+}
+
+.socialNetworksTitle {
+  margin-bottom: 1rem;
+}
+
+.facebook {
+  position: relative;
+  margin-right: 2.5rem;
+}
+
+.google {
+  position: relative;
+  margin-right: 2.5rem;
+}
+
+.checkmark {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  z-index: 2;
+  bottom: 0.5rem;
+  right: 0;
+}

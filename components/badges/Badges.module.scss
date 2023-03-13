@@ -1,0 +1,14 @@
+@use "../../styles/_globalVariables.scss" as *;
+
+.badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.6rem 0.5rem;
+  font-size: 0.7rem;
+  color: white;
+  border-radius: $border-radius-standard;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 1;
+}

@@ -1,0 +1,14 @@
+@use "../../../../styles/_globalVariables.scss" as *;
+
+.label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.inputText {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.2rem;
+  margin-bottom: 0.9rem;
+  @include standard-input;
+}

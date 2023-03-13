@@ -1,0 +1,10 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.deleteBtn {
+  border: 1px solid $button-color-blue;
+  background-color: transparent;
+  color: $button-color-blue;
+  padding: 0.6rem 1rem;
+  border-radius: $border-radius-standard;
+  margin: 2rem 2.5rem;
+  cursor: pointer;
+}

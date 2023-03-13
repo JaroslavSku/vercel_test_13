@@ -1,0 +1,37 @@
+@use "../../../styles/_globalVariables.scss" as *;
+
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f8ff;
+  border: 1px solid #efefef;
+  padding-right: 1.5rem;
+  a {
+    color: $text-color-bronze;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.8rem 8rem 0.8rem 1.5rem;
+  }
+}
+
+.passive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $text-color-bronze;
+  background-color: white;
+  border: 1px solid #efefef;
+  padding-right: 1.5rem;
+  a {
+    color: $text-color-bronze;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.8rem 8rem 0.8rem 1.5rem;
+  }
+}
+
+.arrow {
+  width: 0.55rem;
+  height: 0.9rem;
+}

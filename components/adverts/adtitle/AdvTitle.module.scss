@@ -1,0 +1,11 @@
+.title {
+  position: absolute;
+  margin-left: 0.6rem;
+  color: white;
+  font-size: 0.9rem;
+  top: 7rem;
+  height: 1rem;
+  @media screen and (max-width: 800px) {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,52 @@
+@use "../../../styles/_globalVariables.scss" as *;
+.recapPanel {
+  padding: 1rem;
+  background-color: white;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 0.5rem;
+
+  @media screen and (max-width: 800px) {
+    margin-left: 0rem;
+  }
+}
+
+.recapPanel > p {
+  margin-top: 0.5rem !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+.taxPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color-gray;
+  padding: 0.5rem;
+}
+.resultPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.percentagePanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+}

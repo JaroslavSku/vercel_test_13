@@ -1,0 +1,122 @@
+.item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 1.125rem;
+  background-clip: padding-box;
+  color: #807878;
+  margin-top: 1rem;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.body {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  @media screen and (max-width: 1300px) {
+    display: block;
+    padding: 0;
+    list-style-type: none;
+  }
+  @media screen and (max-width: 1500px) {
+    justify-content: space-evenly;
+  }
+}
+
+.title {
+  color: black;
+}
+
+.container {
+  margin: 5rem 0;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 1.125rem;
+  background-clip: padding-box;
+  color: #807878;
+  border: 1px solid #ccbebc;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
+}
+
+.figure {
+  width: 13rem;
+  margin-bottom: 0;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  @media screen and (max-width: 900px) {
+    width: auto;
+  }
+}
+
+.article {
+  padding: 1rem;
+  width: 17rem;
+}
+
+.address {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 15rem;
+  @media screen and (max-width: 1300px) {
+    width: 100%;
+  }
+}
+
+.middleLine {
+  display: flex;
+  flex-direction: row;
+}
+
+.layout {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.area {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+  svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.price {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  margin-top: 1.2rem;
+}
+
+.firstLineTitle {
+  text-transform: uppercase;
+}
+
+.article {
+  div {
+    margin-bottom: 0.7em;
+  }
+}
