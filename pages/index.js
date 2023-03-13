@@ -127,7 +127,7 @@ export async function getServerSideProps({ query }) {
   console.log(new URLSearchParams(query).toString());
   const queryString = new URLSearchParams(query).toString();
   const res = await axios.get(
-    `https://www.nejemnikvpohode-be.cz/adverts-room/search?${queryString}`
+    `${process.env.NEXT_PUBLIC_REACT_BE_API}/adverts-room/search?${queryString}`
   );
   const { adverts, count, perPage } = res.data;
   console.log("map adv", count, adverts);
