@@ -1,0 +1,1 @@
+export const SAVE_MY_TENANTS = "SAVE_MY_TENANTS";

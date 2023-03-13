@@ -1,0 +1,8 @@
+export const UPDATE_POSITIONS = "UPDATE_POSITIONS";
+export const SAVE_HOUSE_DATA = "SAVE_HOUSE_DATA";
+export const ADD_HOUSE_DATA = "ADD_HOUSE_DATA";
+export const ADD_TO_FLOOR = "ADD_TO_FLOOR";
+export const DELETE_HOUSE = "DELETE_HOUSE";
+export const UPDATE_HOUSE = "UPDATE_HOUSE";
+export const SAVE_HOUSES = "SAVE_HOUSES";
+export const UPDATE_FLOOR = "UPDATE_FLOOR";

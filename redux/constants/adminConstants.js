@@ -1,0 +1,2 @@
+export const SAVE_LESSORS = "SAVE_LESSORS";
+export const UPDATE_LESSORS = "UPDATE_LESSORS";
